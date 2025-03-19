@@ -4,7 +4,7 @@
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -12,7 +12,7 @@
    у которых есть атрибут class
   */
 :where(ul, ol):where([class]) {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 /**
@@ -21,7 +21,7 @@
   */
 body,
 :where(blockquote, figure):where([class]) {
-    margin: 0;
+  margin: 0;
 }
 
 /**
@@ -29,17 +29,17 @@ body,
    у которых есть атрибут class
   */
 :where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
-    margin-block: 0;
+  margin-block: 0;
 }
 
 :where(dd[class]) {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 :where(fieldset[class]) {
-    margin-left: 0;
-    padding: 0;
-    border: none;
+  margin-left: 0;
+  padding: 0;
+  border: none;
 }
 
 /**
@@ -47,11 +47,11 @@ body,
    у которого есть атрибут class
   */
 :where(ul[class]) {
-    list-style: none;
+  list-style: none;
 }
 
 :where(address[class]) {
-    font-style: normal;
+  font-style: normal;
 }
 
 /**
@@ -60,9 +60,9 @@ body,
    чтобы избежать взаимодействие с более сложным селектором
   */
 p {
-    --paragraphMarginBottom: 24px;
+  --paragraphMarginBottom: 24px;
 
-    margin-block: 0;
+  margin-block: 0;
 }
 
 /**
@@ -70,7 +70,7 @@ p {
    который расположен не последним среди своих соседних элементов
   */
 p:where(:not([class]):not(:last-child)) {
-    margin-bottom: var(--paragraphMarginBottom);
+  margin-bottom: var(--paragraphMarginBottom);
 }
 
 /**
@@ -78,9 +78,9 @@ p:where(:not([class]):not(:last-child)) {
   */
 img,
 video {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /**
@@ -90,20 +90,20 @@ input,
 textarea,
 select,
 button {
-    font: inherit;
+  font: inherit;
 }
 
 html {
-    /**
+  /**
      Пригодится в большинстве ситуаций
      (когда, например, нужно будет "прижать" футер к низу сайта)
     */
-    height: 100%;
-    /**
+  height: 100%;
+  /**
      Убираем скачок интерфейса по горизонтали
      при появлении / исчезновении скроллбара
     */
-    scrollbar-gutter: stable;
+  scrollbar-gutter: stable;
 }
 
 /**
@@ -111,26 +111,26 @@ html {
   */
 html,
 :has(:target) {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    /**
+  /**
      Пригодится в большинстве ситуаций
      (когда, например, нужно будет "прижать" футер к низу сайта)
     */
-    min-height: 100%;
-    /**
+  min-height: 100%;
+  /**
      Унифицированный интерлиньяж
     */
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 /**
    Нормализация высоты элемента ссылки при его инспектировании в DevTools
   */
 a:where([class]) {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 /**
@@ -138,7 +138,7 @@ a:where([class]) {
   */
 button,
 label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /**
@@ -147,7 +147,7 @@ label {
    атрибут fill со значением 'none' или начинается с 'url')
   */
 :where([fill]:not([fill="none"], [fill^="url"])) {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 /**
@@ -156,22 +156,26 @@ label {
    атрибут stroke со значением 'none')
   */
 :where([stroke]:not([stroke="none"], [stroke^="url"])) {
-    stroke: currentColor;
+  stroke: currentColor;
 }
 
 /**
    Чиним баг задержки смены цвета при взаимодействии с svg-элементами
   */
 svg * {
-    transition-property: fill, stroke;
+  transition-property: fill, stroke;
 }
 
 /**
    Приведение рамок таблиц в классический 'collapse' вид
   */
 :where(table) {
-    border-collapse: collapse;
-    border-color: currentColor;
+  border-collapse: collapse;
+  border-color: currentColor;
+}
+
+:root {
+  --slidermain: 2.1rem;
 }
 
 /**
@@ -179,72 +183,115 @@ svg * {
    которые предпочитают их не использовать
   */
 @media (prefers-reduced-motion: reduce) {
-    *,
-    ::before,
-    ::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @font-face {
-    font-family: "Permanent Marker";
-    src: url("/fonts/PermanentMarker-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Permanent Marker";
+  src: url("/fonts/PermanentMarker-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Black.woff2") format("woff2");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-
-.wrap{
-    max-width: 1200px;
-    margin: 0 auto;
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.header,
+.slider {
+  background-color: #7711dd;
+}
 
-header{
-    background-color: #7711DD;
+.h1 {
+  font-size: 70px;
+  font-family: "Permanent Marker";
+  color: #fff;
+}
+
+.title-subtitle {
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0.45px;
+}
+
+.slider__main-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: var(--slidermain);
+}
+
+.header__top-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-top: 19px;
+}
+
+.header__top-menu {
+  background-image: url(/src/img/menu.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 49px;
+  height: 51px;
+}
+
+.slider__main-subtitle {
+  margin: 20px 0 50px;
+  display: inline-block;
 }
