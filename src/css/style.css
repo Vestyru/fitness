@@ -263,7 +263,6 @@ svg * {
 .title-subtitle {
     font-family: 'Montserrat';
     font-size: 18px;
-    color: #ffffff;
     letter-spacing: 0.45px;
 }
 
@@ -310,6 +309,7 @@ svg * {
 .slider__main-subtitle {
     margin: 31px 0 50px;
     display: inline-block;
+    color: #ffffff;
 }
 
 .slider__main-left {
