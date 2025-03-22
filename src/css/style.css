@@ -60,8 +60,6 @@ body,
    чтобы избежать взаимодействие с более сложным селектором
   */
 p {
-    --paragraphMarginBottom: 24px;
-
     margin-block: 0;
 }
 
@@ -91,6 +89,7 @@ textarea,
 select,
 button {
     font: inherit;
+    outline: none;
 }
 
 html {
@@ -124,6 +123,8 @@ body {
      Унифицированный интерлиньяж
     */
     line-height: 1.5;
+    color: #1c1c1d;
+    font-family: 'Montserrat';
 }
 
 /**
@@ -264,6 +265,7 @@ svg * {
     font-family: 'Montserrat';
     font-size: 18px;
     letter-spacing: 0.45px;
+    color: #474a57;
 }
 
 .slider__main-wrapper {
@@ -271,6 +273,7 @@ svg * {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    margin-bottom: 81px;
 }
 
 .header__top-wrapper {
@@ -333,6 +336,8 @@ svg * {
     font-weight: 900;
     cursor: pointer;
     transition: 0.3s;
+    background-color: transparent;
+    border: none;
 }
 
 .download:hover {
@@ -488,4 +493,206 @@ svg * {
     height: 206px;
     left: 0;
     bottom: 0;
+}
+
+.card {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 340px;
+    height: 183px;
+    color: #ffff;
+    padding: 24px 21px;
+}
+
+.swiper__card-img {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 15px;
+}
+
+.swiper-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    gap: 30px;
+    transform: translateX(-184px);
+}
+
+.swiper__card-subtitle {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    letter-spacing: 0.5px;
+    line-height: 21px;
+}
+
+.swiper__card-title {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+
+.subtitle--block {
+    display: block;
+    line-height: 150%;
+}
+
+.swiper__main-subtitle {
+    margin-top: 31px;
+}
+
+.h2 {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 48.5px;
+    letter-spacing: 2px;
+    font-family: 'Permanent Marker';
+}
+
+.swiper__main {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.swiper-wrapper {
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.swiper__item-button {
+    border: 2px solid #1c1c1d;
+    width: 18px;
+    height: 18px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.swiper__item-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 49px;
+    gap: 15px;
+}
+
+.swiper__item-button.active {
+    background-color: #ffbd12;
+}
+
+.callback {
+    background-color: #962eff;
+}
+.callback__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.2rem;
+    margin-bottom: 9.4rem;
+}
+
+.callback__wrapper-email {
+    background-image: url(/src/img/input.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 277px;
+    height: 52px;
+    background-color: transparent;
+    border: none;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+}
+
+.callback__wrapper-btn {
+    background-image: url(/src/img/button_input.png);
+}
+
+.slider__wrapper-callback {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-top: 48px;
+    gap: 9px;
+}
+
+.callback__wrapper-btn:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.title {
+    color: #fff;
+}
+
+.swiper {
+    margin-bottom: 80px;
+}
+
+.callback__wrapper-right {
+    position: relative;
+    right: 2.1%;
+    padding-top: 3rem;
+}
+
+.callback__wrapper-left {
+    padding-top: 10.3rem;
+}
+
+.callback__wrapper-subtitle {
+    font-size: 18px;
+    letter-spacing: 0.45px;
+    line-height: 28px;
+    display: block;
+    margin-top: 24px;
+}
+
+::placeholder {
+    color: #1c1c1d;
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+
+.stories__wrapper-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.63px;
+    margin-bottom: 6px;
+}
+
+.stories__wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-top: 3.6rem;
+}
+
+.stories__title {
+    text-align: center;
+}
+
+.stories__wrapper-images {
+    margin-bottom: 1.1rem;
+}
+
+.stories__wrapper-subtitle {
+    line-height: 27.9px;
+    margin-bottom: 12px;
+}
+
+.stories__wraper-time {
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0.5px;
+    font-weight: 500;
 }
