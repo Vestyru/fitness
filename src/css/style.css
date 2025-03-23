@@ -978,3 +978,7 @@ a {
     align-items: center;
     gap: 40px;
 }
+
+.swiper-container {
+    transition: 0.4s;
+}
