@@ -299,7 +299,7 @@ svg * {
 .header_top-hamburger::before {
     content: '';
     position: absolute;
-    background-image: url(/src/img/hamburger.png);
+    background-image: url(.../src/img/hamburger.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -321,7 +321,7 @@ svg * {
 }
 
 .btn {
-    background-image: url(/src/img/button.png);
+    background-image: url(.../src/img/button.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
