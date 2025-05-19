@@ -286,7 +286,7 @@ svg * {
 }
 
 .header_top-hamburger {
-    background-image: url(/src/img/menu.png);
+    background-image: url(../../src/img/menu.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -299,7 +299,7 @@ svg * {
 .header_top-hamburger::before {
     content: '';
     position: absolute;
-    background-image: url(./src/img/hamburger.png);
+    background-image: url(../../src/img/hamburger.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -321,7 +321,7 @@ svg * {
 }
 
 .btn {
-    background-image: url(.../src/img/button.png);
+    background-image: url(../../src/img/button.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -346,16 +346,16 @@ a {
 }
 
 .btn__footer {
-    background-image: url(/src/img/button_footer.png);
+    background-image: url(../../src/img/button_footer.png);
     color: #fff;
 }
 
 .btn__bonus {
-    background-image: url(/src/img/button_bonus.png);
+    background-image: url(../../src/img/button_bonus.png);
     color: #fff;
 }
 .btn_sing_in {
-    background-image: url(/src/img/sing_in.png);
+    background-image: url(../../src/img/sing_in.png);
     width: 403px;
     height: 52px;
     margin-top: auto;
@@ -478,7 +478,7 @@ a {
 .cloud::after {
     content: '';
     position: absolute;
-    background-image: url(/src/img/cloud.png);
+    background-image: url(../../src/img/cloud.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -491,7 +491,7 @@ a {
 .cloud_small::before {
     content: '';
     position: absolute;
-    background-image: url(/src/img/cloud_small.png);
+    background-image: url(../../src/img/cloud_small.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -503,7 +503,7 @@ a {
 .cloud_small-bg::after {
     content: '';
     position: absolute;
-    background-image: url(/src/img/cloud_small-bg.png);
+    background-image: url(../../src/img/cloud_small-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -515,7 +515,7 @@ a {
 .cloud_small-bottom::after {
     content: '';
     position: absolute;
-    background-image: url(/src/img/cloud_small-bottom.png);
+    background-image: url(../../src/img/cloud_small-bottom.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 308px;
@@ -626,7 +626,7 @@ a {
 }
 
 .callback__wrapper-email {
-    background-image: url(/src/img/input.png);
+    background-image: url(../../src/img/input.png);
     background-repeat: no-repeat;
     width: 277px;
     height: 52px;
@@ -636,7 +636,7 @@ a {
     letter-spacing: 0.5px;
 }
 .input {
-    background-image: url(/src/img/input__from.png);
+    background-image: url(../../src/img/input__from.png);
     background-repeat: no-repeat;
     width: 403px;
     height: 52px;
@@ -647,7 +647,7 @@ a {
 }
 
 .callback__wrapper-btn {
-    background-image: url(/src/img/button_input.png);
+    background-image: url(../../src/img/button_input.png);
 }
 
 .slider__wrapper-callback {
@@ -784,13 +784,13 @@ a {
 }
 
 .btn-card {
-    background-image: url(/src/img/btn__card.png);
+    background-image: url(../../src/img/btn__card.png);
     width: 217px;
     height: 56px;
 }
 
 .bonus__wrapper-callback {
-    background-image: url(/src/img/from.png);
+    background-image: url(../../src/img/from.png);
     background-repeat: no-repeat;
     width: 483px;
     height: 541px;
@@ -899,13 +899,13 @@ a {
     width: 0px;
     height: 0px;
     font-size: 30px;
-    background-image: url('images/check.svg');
+    background-image: url('../../images/check.svg');
     background-repeat: no-repeat;
     transition: 500ms;
 }
 
 .radio-input::after {
-    background-image: url('images/radio.svg');
+    background-image: url('../../images/radio.svg');
 }
 
 .checkbox-input::after,
@@ -914,13 +914,13 @@ a {
     position: absolute;
     width: 0px;
     height: 0px;
-    background-image: url('/src/img/check.png');
+    background-image: url('../../src/img/check.png');
     background-repeat: no-repeat;
     transition: 500ms;
 }
 
 .radio-input::after {
-    background-image: url('/src/img/check.png');
+    background-image: url('../../src/img/check.png');
 }
 
 .checkbox-input:checked::after,
